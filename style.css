@@ -29,6 +29,16 @@ body{
     padding: 1em;
 }
 
+/* Container for main content */
+.container {
+    background-color: #f5f5f5; /* very light gray */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 1200px;
+}
+
 /* Make main expand so footer sticks to bottom via flexbox */
 main {
     flex: 1 0 auto;
@@ -75,11 +85,11 @@ nav a:hover {
 
 /* Page sections use the white page background (no separate colored card) */
 header, section {
-    margin: 2em auto;
-    width: min(75em, 100%);
+    margin: 2em 0;
+    width: 100%;
     background-color: transparent;
-    padding: min(2em, 15%);
-    border-radius: 1em;
+    padding: 0;
+    border-radius: 0;
 }
 
 /* Home header layout */
@@ -173,6 +183,12 @@ footer {
     }
 }
 
-main section {
-    margin: 2em auto;
+@media (max-width: 600px) {
+    header img {
+        width: 150px;
+        height: 150px;
+    }
+    .flex-container {
+        gap: 1em;
+    }
 }
