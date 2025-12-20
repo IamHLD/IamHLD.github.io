@@ -4,7 +4,7 @@
     --base-color: #ffffff;
     --primary-color: #ffc06e;
     --secondary-color: #8d8dff; 
-    --accent-color: #4169E1; /* Royal Blue */
+    --accent-color: #4169E1; 
     --color-1: #f9f6f3;
     --color-2: #f3f6f9;
     --color-3: #f6f3f9;
@@ -146,8 +146,7 @@ header, section {
     flex-wrap: wrap;
 }
 
-
-
+/* Header Image Styles */
 header img {
     width: 200px;
     height: 200px;
@@ -157,6 +156,7 @@ header img {
     flex: 0 0 200px;
 }
 
+/* Text Container Styles */
 .text-container {
     flex: 1 1 34em;
     min-width: 220px;
@@ -401,4 +401,47 @@ footer {
     width: 400px;
     display: block;
     margin: 0 auto 1em auto;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;      
+    margin-top: 20px;
+}
+
+/* The solid blue button */
+.btn-primary {
+    background-color: #5d78de;
+    color: white !important;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* The clear outline button */
+.btn-secondary {
+    background-color: transparent;
+    color: #5d78de !important;
+    border: 2px solid #5d78de;
+    padding: 8px 20px; 
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #5d78de; 
+    color: white !important;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.project-btn:hover {
+    background-color: #4a62b8; 
 }
